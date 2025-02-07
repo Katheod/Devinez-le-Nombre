@@ -12,7 +12,7 @@ def afficher_message_erreur(nombre, nombre_aléatoire):
 def devines_le_nombre(x): 
     nombre_aléatoire = random.randint(1, x)
     nombre = 0 
-    essai = 0
+    essai = 1
     while nombre_aléatoire != nombre:
         try:
             nombre = int(input(f"Choisis un nombre entre 1 et {x} : "))
@@ -27,14 +27,16 @@ def devines_le_nombre(x):
     print(f"Bravo! Tu as trouvé mon nombre après {essai} essais. C'était bien le {nombre_aléatoire}")
 
 
+#Fonction pour afficher le résultat de la devinette de l'ordinateur
 def afficher_resultat(choix, essai):
     print(f"Ton numéro est le {choix} et je l'ai trouvé après {essai} coups!")
 
 
+# Fonction pour l'ordinateur devine le nombre choisi par l'utilisateur
 def ordinateur_devine(x):
     min_val, max_val = 1, x
     retour = ""
-    essai = 0
+    essai = 1
     while retour != "c":
         if min_val != max_val:
             choix = random.randint(min_val, max_val)
@@ -51,5 +53,5 @@ def ordinateur_devine(x):
     
     afficher_resultat(choix, essai)
 
-#devines_le_nombre(100)
-ordinateur_devine(1)
+devines_le_nombre(100)
+# ordinateur_devine(100)
