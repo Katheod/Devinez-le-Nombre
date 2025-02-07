@@ -15,6 +15,4 @@ Ce projet consiste à développer un jeu simple dans lequel l’ordinateur chois
 - Bibliothèques : `random` (pour générer le nombre aléatoire)  
 
 # **Extensions Possibles**  
-- Ajouter un mode multijoueur (un joueur choisit le nombre, l’autre devine).  
-- Ajouter un mode chronométré pour voir en combien de temps le joueur trouve le nombre.  
-- Modifier la plage de nombres selon le niveau de difficulté choisi.  
+- Ajouter un mode chronométré pour voir en combien de temps le joueur trouve le nombre.
