@@ -52,6 +52,3 @@ def ordinateur_devine(x):
             essai += 1
     
     afficher_resultat(choix, essai)
-
-devines_le_nombre(100)
-# ordinateur_devine(100)

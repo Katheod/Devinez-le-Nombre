@@ -55,8 +55,3 @@ def devines_le_nombre(x): # Le x permet à l'utilisateur de choisir la difficult
             print(f"Veuillez entrer un nombre valide.")
     
     print(f"Bravo! Tu as trouvé mon nombre après {essai} essais. C'était bien le {nombre_aléatoire}")
-<<<<<<< HEAD:L'ordinateur devine le nombre
-=======
-
-devines_le_nombre(100)
->>>>>>> 83a633322537dace2ccda6a1f7e0d57c3160ff5d:Jeu en mode chrono
