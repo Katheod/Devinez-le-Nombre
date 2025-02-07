@@ -7,8 +7,7 @@ Ce projet consiste à développer un jeu simple dans lequel l’ordinateur chois
 - Génération d’un nombre aléatoire dans une plage définie (ex. : 1 à 100).  
 - Saisie de nombres par l’utilisateur.  
 - Indications après chaque essai ("Trop grand", "Trop petit").  
-- Affichage du nombre de tentatives utilisées.  
-- Option pour rejouer après avoir trouvé le bon nombre.  
+- Affichage du nombre de tentatives utilisées. 
 
 # **Technologies Utilisées**  
 - Langage : Python  
