@@ -55,5 +55,3 @@ def devines_le_nombre(x): # Le x permet à l'utilisateur de choisir la difficult
             print(f"Veuillez entrer un nombre valide.")
     
     print(f"Bravo! Tu as trouvé mon nombre après {essai} essais. C'était bien le {nombre_aléatoire}")
-
-devines_le_nombre(100)
