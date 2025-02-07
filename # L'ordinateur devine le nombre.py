@@ -1,4 +1,3 @@
-# L'ordinateur devine le nombre
 import random
 import time
 
@@ -8,7 +7,7 @@ def timer_decorator(function):
         start = time.perf_counter()
         result = function(*args, **kwargs)
         end = time.perf_counter()
-        print(f"Et ça ma prit seulement {end - start: .5f} secondes")
+        print(f"Et ça a pris seulement {end - start: .5f} secondes.")
         return result
     return wrapper
 
@@ -31,6 +30,22 @@ def ordinateur_devine(x):
             min = choix + 1
             essai += 1
     
-    print(f"Ton numéro est le {choix} et je l'ai trouvé en {essai} coups")
+    print(f"Ton numéro est le {choix} et je l'ai trouvé en {essai} coups!")
 
-ordinateur_devine(100)
+@timer_decorator
+def devines_le_nombre(x): # Le x est pour que l'utilisateur choisit la difficulté du jeu.
+    nombre_aléatoire = random.randint(1, x)
+    nombre = 0 # Initier la variable.
+    essai = 0
+    while nombre_aléatoire != nombre:
+        nombre = int(input(f"Choisis un nombre entre 1 et {x}: "))
+        if nombre < nombre_aléatoire:
+            print(f"Désolé, mauvais nombre. Mon nombre est plus grand que {nombre}.")
+            essai += 1
+        elif nombre > nombre_aléatoire: 
+            print(f"Désolé, mauvais nombre. Mon nombre est plus petit que {nombre}.")
+            essai += 1
+    
+    print(f"Bravo! Tu as trouvé mon nombre après {essai} essaies. C'était bien le {nombre_aléatoire}!")
+
+devines_le_nombre(100)
